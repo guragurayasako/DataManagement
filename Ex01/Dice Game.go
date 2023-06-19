@@ -1,12 +1,22 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"math/rand"
 	"time"
 )
 
 func main() {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("What is your name? \n> ")
+
+	name, _ := reader.ReadString('\n')
+
+	// Print a greeting message
+	fmt.Printf("Hello, %s!\n", name)
+	
 	// Seed the random number generator with the current time
 	rand.Seed(time.Now().UnixNano())
 
