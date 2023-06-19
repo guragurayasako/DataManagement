@@ -31,8 +31,8 @@ func main() {
 	fmt.Println("Total value:", total)
 
 	if total > 7 {
-		fmt.Println("You won")
+		fmt.Println("%s won!", name)
 	} else {
-		fmt.Println("You lost")
+		fmt.Println("%s lost!", name)
 	}
 }
